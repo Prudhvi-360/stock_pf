@@ -7,7 +7,7 @@ Content-Type: application/json
 
 {
 
-    "symbol": "KOTAKK",
+    "symbol": "SBIN",
     "name": "Kotak Bank",
     "quantity": 10,
     "mktprice": 500,
@@ -15,7 +15,7 @@ Content-Type: application/json
 }
 
 ### delete stock
-DELETE http://localhost:4004/odata/v4/stockssrv/stockset/dfab5db1-cbf0-4831-925d-8cbf6342ee72 HTTP/1.1
+DELETE http://localhost:4004/odata/v4/stockssrv/stockset/0f91cec1-f0e9-4edb-9bbf-aea24871d0b5 HTTP/1.1
 
 ### Get portfolio details
 GET http://localhost:4004/odata/v4/stockssrv/holdings HTTP/1.1
