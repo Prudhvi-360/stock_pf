@@ -14,8 +14,18 @@ Content-Type: application/json
     "avgprice": 200
 }
 
+### Update stock
+PATCH http://localhost:4004/odata/v4/stockssrv/stockset/c68d2648-1822-41e0-9828-757910337d2e HTTP/1.1
+Content-Type: application/json
+
+{
+
+    "quantity": 10
+}
+
 ### delete stock
-DELETE http://localhost:4004/odata/v4/stockssrv/stockset/0f91cec1-f0e9-4edb-9bbf-aea24871d0b5 HTTP/1.1
+DELETE http://localhost:4004/odata/v4/stockssrv/stockset/1164c587-fa47-4bcb-8b51-291ee5f4231a HTTP/1.1
 
 ### Get portfolio details
 GET http://localhost:4004/odata/v4/stockssrv/holdings HTTP/1.1
+

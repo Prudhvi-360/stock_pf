@@ -17,7 +17,7 @@ module.exports = cds.service.impl(async function () {
       req.data.totreturns = ((req.data.current - req.data.invested) / req.data.invested) * 100;
    });
 
-   this.after('READ', 'stockset', async (data, res) => {
+   this.after('READ', 'stockset', async (data) => {
       data.forEach((item, index) => {
          //res.results[index].invested = item.quantity * item.avgprice;
          //res.results[index].current = item.quantity * item.mktprice;

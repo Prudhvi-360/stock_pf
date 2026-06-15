@@ -10,7 +10,7 @@ entity stocks {
         mktprice   : Decimal(12, 2);
         avgprice   : Decimal(12, 2);
         totreturns : Int16;
-        datetime   : Timestamp;
+        datetime   : Timestamp @cds.on.insert : $now;
 }
 
 entity holdings as
